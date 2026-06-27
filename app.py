@@ -1,6 +1,10 @@
 import os
 import gradio as gr
 from huggingface_hub import InferenceClient
+from dotenv import load_dotenv
+
+# Load environment variables from a .env file
+load_dotenv()
 
 # Initialize the Hugging Face Serverless client.
 # Note: For production use, set up a free Hugging Face token at huggingface.co/settings/tokens
